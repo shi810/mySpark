@@ -15,7 +15,7 @@ object CreateDFFromJsonFile {
                 .appName("jsonRDD")
                 .getOrCreate()
         val jsonDS: DataFrame = spark.read.json("./data/json")
-
+	//史红光
         jsonDS.show()
 
         jsonDS.createOrReplaceTempView("jsonTable")
